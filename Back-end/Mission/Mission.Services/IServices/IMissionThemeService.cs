@@ -1,0 +1,14 @@
+using System;
+using Mission.Entities.Entities;
+using Mission.Entities.Models;
+
+namespace Mission.Services.IServices;
+
+public interface IMissionThemeService
+{
+    Task<List<MissionThemeViewModel>> GetAllMissionTheme();
+    Task<MissionThemeViewModel?> GetMissionThemeById(int missionThemeId);
+    Task<bool> AddMissionTheme(MissionThemeViewModel model);
+    Task<bool> UpdateMissionTheme(MissionThemeViewModel model);
+    Task<bool> DeleteMissionTheme(int missionThemeId);
+}

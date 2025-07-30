@@ -1,0 +1,34 @@
+# .gitignore for .NET backend and Angular frontend
+
+# Ignore secrets and config files
+*.env
+*.user
+appsettings.*.json
+appsettings.json
+secrets.json
+*.key
+*.pfx
+
+# Ignore build output folders
+bin/
+obj/
+dist/
+build/
+
+# Ignore node_modules for Angular frontend
+frontend/node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore system files
+.DS_Store
+Thumbs.db
